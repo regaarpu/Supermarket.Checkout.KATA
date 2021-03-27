@@ -1,0 +1,12 @@
+[
+  {
+    "ProductCode": "A99",
+    "OfferQuantity": 3,
+    "OfferPrice": "1.30"
+  },
+  {
+    "ProductCode": "B15",
+    "OfferQuantity": 2,
+    "OfferPrice": "0.45"
+  }
+]

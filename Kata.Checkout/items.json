@@ -1,0 +1,14 @@
+ [
+    {
+      "ProductCode": "A99",
+      "UnitPrice": "0.50"
+    },
+    {
+      "ProductCode": "B15",
+      "UnitPrice": "0.30"
+    },
+    {
+      "ProductCode": "C40",
+      "UnitPrice": "0.60"
+    }
+  ]
