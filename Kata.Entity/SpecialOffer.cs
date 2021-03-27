@@ -6,7 +6,7 @@ namespace Kata.Entity
 {
     public class SpecialOffer : Product
     {
-        public int? OfferQuantity { get; set; }
-        public decimal? OfferPrice { get; set; }
+        public int OfferQuantity { get; set; }
+        public decimal OfferPrice { get; set; }
     }
 }
