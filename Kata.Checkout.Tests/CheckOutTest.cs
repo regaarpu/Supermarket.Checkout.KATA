@@ -16,6 +16,19 @@ namespace Kata.Checkout.Tests
         }
 
         [Fact]
+        public void Checkout_Pricing_A_Only()
+        {
+            var productScanList = new List<string>()
+            {
+                "A99"
+            };
+
+            var totalPrice = checkout.ScanProductNGetTotal(productScanList);
+
+            Assert.Equal(0.5M, totalPrice, 2);
+        }
+
+        [Fact]
         public void Checkout_Pricing_AB_Only()
         {
             var productScanList = new List<string>()
@@ -27,6 +40,21 @@ namespace Kata.Checkout.Tests
             var totalPrice = checkout.ScanProductNGetTotal(productScanList);
 
             Assert.Equal(0.8M, totalPrice, 2);
+        }
+
+        [Fact]
+        public void Checkout_Pricing_ABC_Only()
+        {
+            var productScanList = new List<string>()
+            {
+                "A99",
+                "B15",
+                "C40"
+            };
+
+            var totalPrice = checkout.ScanProductNGetTotal(productScanList);
+
+            Assert.Equal(1.4M, totalPrice, 2);
         }
 
         [Fact]
